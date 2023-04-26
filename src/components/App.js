@@ -8,10 +8,14 @@ function App() {
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
+  
 
   return (
-    <div className={"App " + (isDarkMode ? "dark" : "light")}>
-      <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
+    <div className={'App ' + (isDarkMode ? 'dark' : 'light')}>
+      <Header
+        isDarkMode={isDarkMode}
+        onDarkModeClick={handleDarkModeClick}
+      />
       <ShoppingList />
     </div>
   );
